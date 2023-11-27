@@ -1,7 +1,9 @@
-var oneDay = 1000 * 60 * 60 * 24;
-var oneHours = 1000 * 60 * 60;
-var oneMin = 1000 * 60;
 var oneSec = 1000;
+var oneMin = 1000 * 60;
+var oneHours = 1000 * 60 * 60;
+var oneDay = 1000 * 60 * 60 * 24;
+var oneMonth = 1000 * 60 * 60 * 24 * 30;
+var oneYear = 1000 * 60 * 60 * 24 * 30 * 12;
 
 function start() {
     console.log("start");
@@ -30,11 +32,11 @@ function start() {
 
 start();
 
-document.onclick = function() {
+document.onclick = function () {
     document.getElementById("my_audio").play();
 }
 
-setInterval(function() {
+setInterval(function () {
     countdowTimeNhaGai();
     countdowTimeNhaTrai();
 }, 1000);
@@ -43,10 +45,15 @@ function countdowTimeNhaTrai() {
     let curTime = Date.now();
     let targetTime = new Date(2021, 11, 18, 17, 0, 0, 0);
     let timeStemp = targetTime - curTime;
-    let day = getAmountDay(timeStemp);
-    let hours = getAmountHours(timeStemp - day * oneDay);
-    let min = getAmountMin(timeStemp - day * oneDay - hours * oneHours);
-    let sec = getAmountSec(timeStemp - day * oneDay - hours * oneHours - min * oneMin);
+    if (timeStemp < 0) { timeStemp = new Date() - targetTime; }
+    let year = getAmountYear(timeStemp);
+    let month = getAmountMonth(timeStemp - year * oneYear);
+    let day = getAmountDay(timeStemp - year * oneYear - month * oneMonth);
+    let hours = getAmountHours(timeStemp - year * oneYear - month * oneMonth - day * oneDay);
+    let min = getAmountMin(timeStemp - year * oneYear - month * oneMonth - day * oneDay - hours * oneHours);
+    let sec = getAmountSec(timeStemp - year * oneYear - month * oneMonth - day * oneDay - hours * oneHours - min * oneMin);
+    document.getElementById("COUNTDOWN_ITEM424").getElementsByClassName("ladi-countdown-text")[0].innerHTML = `<span>${year}</span>`;
+    document.getElementById("COUNTDOWN_ITEM425").getElementsByClassName("ladi-countdown-text")[0].innerHTML = `<span>${month}</span>`;
     document.getElementById("COUNTDOWN_ITEM426").getElementsByClassName("ladi-countdown-text")[0].innerHTML = `<span>${day}</span>`;
     document.getElementById("COUNTDOWN_ITEM427").getElementsByClassName("ladi-countdown-text")[0].innerHTML = `<span>${hours}</span>`;
     document.getElementById("COUNTDOWN_ITEM428").getElementsByClassName("ladi-countdown-text")[0].innerHTML = `<span>${min}</span>`;
@@ -55,18 +62,30 @@ function countdowTimeNhaTrai() {
 
 function countdowTimeNhaGai() {
     let curTime = Date.now();
-    let targetTime = new Date(2021, 11, 17, 16, 00, 0, 0);
+    let targetTime = new Date(2021, 11, 17, 16, 0, 0);
     let timeStemp = targetTime - curTime;
-    let day = getAmountDay(timeStemp);
-    let hours = getAmountHours(timeStemp - day * oneDay);
-    let min = getAmountMin(timeStemp - day * oneDay - hours * oneHours);
-    let sec = getAmountSec(timeStemp - day * oneDay - hours * oneHours - min * oneMin);
+    if (timeStemp < 0) { timeStemp = new Date() - targetTime; }
+    let year = getAmountYear(timeStemp);
+    let month = getAmountMonth(timeStemp - year * oneYear);
+    let day = getAmountDay(timeStemp - year * oneYear - month * oneMonth);
+    let hours = getAmountHours(timeStemp - year * oneYear - month * oneMonth - day * oneDay);
+    let min = getAmountMin(timeStemp - year * oneYear - month * oneMonth - day * oneDay - hours * oneHours);
+    let sec = getAmountSec(timeStemp - year * oneYear - month * oneMonth - day * oneDay - hours * oneHours - min * oneMin);
+    document.getElementById("COUNTDOWN_ITEM436").getElementsByClassName("ladi-countdown-text")[0].innerHTML = `<span>${year}</span>`;
+    document.getElementById("COUNTDOWN_ITEM437").getElementsByClassName("ladi-countdown-text")[0].innerHTML = `<span>${month}</span>`;
     document.getElementById("COUNTDOWN_ITEM438").getElementsByClassName("ladi-countdown-text")[0].innerHTML = `<span>${day}</span>`;
     document.getElementById("COUNTDOWN_ITEM439").getElementsByClassName("ladi-countdown-text")[0].innerHTML = `<span>${hours}</span>`;
     document.getElementById("COUNTDOWN_ITEM440").getElementsByClassName("ladi-countdown-text")[0].innerHTML = `<span>${min}</span>`;
     document.getElementById("COUNTDOWN_ITEM441").getElementsByClassName("ladi-countdown-text")[0].innerHTML = `<span>${sec}</span>`;
 }
 
+function getAmountYear(stemp) {
+    return Math.floor(stemp / oneYear);
+}
+
+function getAmountMonth(stemp) {
+    return Math.floor(stemp / oneMonth);
+}
 
 function getAmountDay(stemp) {
     return Math.floor(stemp / oneDay);

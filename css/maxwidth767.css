@@ -1510,7 +1510,7 @@
         text-align: center;
     }
     #COUNTDOWN425>.ladi-countdown>.ladi-element {
-        width: calc((100% - 10px * 3) / 4);
+        width: calc((100% - 10px * 5) / 6);
         height: 100%;
     }
     #COUNTDOWN425>.ladi-countdown .ladi-countdown-background {
@@ -1521,7 +1521,7 @@
     }
     #BOX430 {
         width: 320px;
-        height: 43.5px;
+        height: 35px;
         top: 80px;
         left: 0px;
     }
@@ -1532,14 +1532,38 @@
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
-    #HEADLINE431 {
+    #HEADLINE429 {
         width: 71px;
         top: 85px;
         left: 0px;
     }
+    #HEADLINE429>.ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+    #HEADLINE430 {
+        width: 71px;
+        top: 85px;
+        left: 60px;
+    }
+    #HEADLINE430>.ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+    #HEADLINE431 {
+        width: 71px;
+        top: 85px;
+        left: 110px;
+    }
     #HEADLINE431>.ladi-headline {
         color: rgb(0, 0, 0);
-        font-size: 18px;
+        font-size: 14px;
         font-weight: bold;
         text-align: center;
         line-height: 1.6;
@@ -1547,11 +1571,11 @@
     #HEADLINE432 {
         width: 71px;
         top: 85px;
-        left: 83px;
+        left: 160px;
     }
     #HEADLINE432>.ladi-headline {
         color: rgb(0, 0, 0);
-        font-size: 18px;
+        font-size: 14px;
         font-weight: bold;
         text-align: center;
         line-height: 1.6;
@@ -1559,11 +1583,11 @@
     #HEADLINE433 {
         width: 71px;
         top: 85px;
-        left: 167px;
+        left: 210px;
     }
     #HEADLINE433>.ladi-headline {
         color: rgb(0, 0, 0);
-        font-size: 18px;
+        font-size: 14px;
         font-weight: bold;
         text-align: center;
         line-height: 1.6;
@@ -1571,11 +1595,11 @@
     #HEADLINE434 {
         width: 71px;
         top: 85px;
-        left: 249px;
+        left: 260px;
     }
     #HEADLINE434>.ladi-headline {
         color: rgb(0, 0, 0);
-        font-size: 18px;
+        font-size: 14px;
         font-weight: bold;
         text-align: center;
         line-height: 1.6;
@@ -1599,7 +1623,7 @@
         text-align: center;
     }
     #COUNTDOWN437>.ladi-countdown>.ladi-element {
-        width: calc((100% - 10px * 3) / 4);
+        width: calc((100% - 10px * 5) / 6);
         height: 100%;
     }
     #COUNTDOWN437>.ladi-countdown .ladi-countdown-background {
@@ -1610,7 +1634,7 @@
     }
     #BOX442 {
         width: 320px;
-        height: 43.5px;
+        height: 32px;
         top: 88px;
         left: 0px;
     }
@@ -1621,50 +1645,74 @@
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
-    #HEADLINE443 {
-        width: 71px;
+    #HEADLINE441 {
+        width: 60px;
         top: 93px;
         left: 0px;
     }
+    #HEADLINE441>.ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+    #HEADLINE442 {
+        width: 60px;
+        top: 93px;
+        left: 60px;
+    }
+    #HEADLINE442>.ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+    #HEADLINE443 {
+        width: 60px;
+        top: 93px;
+        left: 110px;
+    }
     #HEADLINE443>.ladi-headline {
         color: rgb(0, 0, 0);
-        font-size: 18px;
+        font-size: 14px;
         font-weight: bold;
         text-align: center;
         line-height: 1.6;
     }
     #HEADLINE444 {
-        width: 71px;
+        width: 60px;
         top: 93px;
-        left: 83px;
+        left: 160px;
     }
     #HEADLINE444>.ladi-headline {
         color: rgb(0, 0, 0);
-        font-size: 18px;
+        font-size: 14px;
         font-weight: bold;
         text-align: center;
         line-height: 1.6;
     }
     #HEADLINE445 {
-        width: 71px;
+        width: 60px;
         top: 93px;
-        left: 167px;
+        left: 210px;
     }
     #HEADLINE445>.ladi-headline {
         color: rgb(0, 0, 0);
-        font-size: 18px;
+        font-size: 14px;
         font-weight: bold;
         text-align: center;
         line-height: 1.6;
     }
     #HEADLINE446 {
-        width: 71px;
+        width: 60px;
         top: 93px;
-        left: 249px;
+        left: 260px;
     }
     #HEADLINE446>.ladi-headline {
         color: rgb(0, 0, 0);
-        font-size: 18px;
+        font-size: 14px;
         font-weight: bold;
         text-align: center;
         line-height: 1.6;
@@ -1682,7 +1730,7 @@
     }
     #HEADLINE493>.ladi-headline {
         color: rgb(255, 255, 255);
-        font-size: 18px;
+        font-size: 14px;
         font-weight: bold;
         text-align: center;
         line-height: 1.6;

@@ -391,7 +391,7 @@
         top: 0px;
         left: 0px;
         background-image: url("../image/image45.jpg");
-        scale: 3;
+        scale: 1.2;
     }
     #IMAGE45.ladi-animation>.ladi-image {
         animation-name: fadeInUp;
@@ -1560,7 +1560,7 @@
         -webkit-animation-iteration-count: 1;
     }
     #BOX430 {
-        width: 320px;
+        width: 360px;
         height: 43.5px;
         top: 47px;
         left: 0px;
@@ -1572,10 +1572,34 @@
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
-    #HEADLINE431 {
+    #HEADLINE429 {
         width: 71px;
         top: 55px;
         left: 0px;
+    }
+    #HEADLINE429>.ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+    #HEADLINE430 {
+        width: 71px;
+        top: 55px;
+        left: 60px;
+    }
+    #HEADLINE430>.ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+    #HEADLINE431 {
+        width: 71px;
+        top: 55px;
+        left: 120px;
     }
     #HEADLINE431>.ladi-headline {
         color: rgb(0, 0, 0);
@@ -1587,7 +1611,7 @@
     #HEADLINE432 {
         width: 71px;
         top: 55px;
-        left: 83px;
+        left: 180px;
     }
     #HEADLINE432>.ladi-headline {
         color: rgb(0, 0, 0);
@@ -1599,7 +1623,7 @@
     #HEADLINE433 {
         width: 71px;
         top: 55px;
-        left: 167px;
+        left: 240px;
     }
     #HEADLINE433>.ladi-headline {
         color: rgb(0, 0, 0);
@@ -1610,8 +1634,8 @@
     }
     #HEADLINE434 {
         width: 71px;
-        top: 57px;
-        left: 249px;
+        top: 55px;
+        left: 300px;
     }
     #HEADLINE434>.ladi-headline {
         color: rgb(0, 0, 0);
@@ -1627,7 +1651,7 @@
         left: 72.5px;
     }
     #COUNTDOWN437 {
-        width: 320px;
+        width: 360px;
         height: 57px;
         top: 0px;
         left: 0px;
@@ -1639,8 +1663,8 @@
         text-align: center;
     }
     #COUNTDOWN437>.ladi-countdown>.ladi-element {
-        width: calc((100% - 10px * 3) / 5);
-        margin-right: 10px;
+        width: calc((100% - 10px * 5) / 6);
+        /* margin-right: 10px; */
         height: 100%;
     }
     #COUNTDOWN437>.ladi-countdown .ladi-countdown-background {
@@ -1650,7 +1674,7 @@
         border-radius: 10px;
     }
     #COUNTDOWN425 {
-        width: 320px;
+        width: 360px;
         height: 57px;
         top: 0px;
         left: 0px;
@@ -1662,8 +1686,8 @@
         text-align: center;
     }
     #COUNTDOWN425>.ladi-countdown>.ladi-element {
-        width: calc((100% - 10px * 3) / 5);
-        margin-right: 10px;
+        width: calc((100% - 10px * 5) / 6);
+        /* margin-right: 10px; */
         height: 100%;
     }
     #COUNTDOWN425>.ladi-countdown .ladi-countdown-background {
@@ -1673,7 +1697,7 @@
         border-radius: 10px;
     }
     #BOX442 {
-        width: 320px;
+        width: 360px;
         height: 43.5px;
         top: 47px;
         left: 0px;
@@ -1685,10 +1709,34 @@
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
     }
-    #HEADLINE443 {
+    #HEADLINE441 {
         width: 71px;
         top: 55px;
         left: 0px;
+    }
+    #HEADLINE441>.ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+    #HEADLINE442 {
+        width: 71px;
+        top: 55px;
+        left: 60px;
+    }
+    #HEADLINE442>.ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+    #HEADLINE443 {
+        width: 71px;
+        top: 55px;
+        left: 120px;
     }
     #HEADLINE443>.ladi-headline {
         color: rgb(0, 0, 0);
@@ -1700,7 +1748,7 @@
     #HEADLINE444 {
         width: 71px;
         top: 55px;
-        left: 83px;
+        left: 180px;
     }
     #HEADLINE444>.ladi-headline {
         color: rgb(0, 0, 0);
@@ -1712,7 +1760,7 @@
     #HEADLINE445 {
         width: 71px;
         top: 55px;
-        left: 167px;
+        left: 240px;
     }
     #HEADLINE445>.ladi-headline {
         color: rgb(0, 0, 0);
@@ -1723,8 +1771,8 @@
     }
     #HEADLINE446 {
         width: 71px;
-        top: 57px;
-        left: 249px;
+        top: 55px;
+        left: 300px;
     }
     #HEADLINE446>.ladi-headline {
         color: rgb(0, 0, 0);
