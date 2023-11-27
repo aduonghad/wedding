@@ -38,6 +38,9 @@
 }
 
 @media (min-width: 768px) {
+    #TOP30 .header-background.ladi-section{
+        background-color: rgb(230, 148, 27);
+    }
     #SECTION_POPUP {
         height: 0px;
     }
